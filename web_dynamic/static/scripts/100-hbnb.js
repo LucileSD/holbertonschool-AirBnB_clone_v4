@@ -66,8 +66,6 @@ $.when($.ready).then(function () {
     }
   });
   $('button').click(function () {
-    console.log(listIdStates);
-    console.log(listIdCities);
     $.ajax({
       url: 'http://localhost:5001/api/v1/places_search/',
       type: 'POST',
